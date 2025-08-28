@@ -8,6 +8,8 @@ void setup() {
   if(lightLevel < 100)
   {
     Serial.println("It's really dark!");
+    pinMode(4, OUTPUT);
+    digitalWrite(4, HIGH);
   }
   else if(lightLevel < 200)
   {
